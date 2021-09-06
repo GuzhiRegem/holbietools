@@ -1,0 +1,12 @@
+#!/bin/bash
+if [ -z "$1" ]
+then
+git add .
+git commit -m "commit"
+git push
+else
+git add .
+git commit -m "$1"
+git push
+echo chau
+fi
