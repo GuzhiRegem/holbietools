@@ -1,3 +1,3 @@
 #!/bin/bash
-alias gitu="~/holbietools/gitupload"
-alias exe="~/holbietools/execute_local"
+alias gitu="/root/holbietools/gitupload"
+alias exe="/root/holbietools/execute_local"
