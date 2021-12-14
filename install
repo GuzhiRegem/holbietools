@@ -1,11 +1,18 @@
 #!/bin/bash
-
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
-A_GIT="alias gitu=$SCRIPT_DIR/gitupload"
 
-echo "$A_GIT" >> ~/.bash_aliases
-source ~/.bash_aliases
-cat ./vimoptions >> ~/.vimrc
-echo ":autocmd BufNewFile  *.js	0r $SCRIPT_DIR/templates/file.js" >> ~/.vimrc
-echo ":autocmd BufNewFile  *.py	0r $SCRIPT_DIR/templates/file.py" >> ~/.vimrc
-echo DONE!
+bash ./make_vim
+cat ./.vimoptions | while read l; do
+    grep -sqxF "$l" ~/.vimrc || echo "$l" >> ~/.vimrc
+done
+cat programs/alias | while read l; do
+    ALI=${l%:*}
+    P_NAME=${l#*:}
+    COMM="alias $ALI=$SCRIPT_DIR/programs/$P_NAME"
+    grep -sqxF "$COMM" ~/.bash_aliases || echo "$COMM" >> ~/.bash_aliases
+done
+
+echo ""
+echo -e "\e[1;32m---Done---"
+echo -e "\e[1;31m.: Restart terminal to see changes :."
+echo -e "\e[1;37m"
