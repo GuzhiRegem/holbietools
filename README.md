@@ -25,10 +25,11 @@ cd holbietools
 ### gitu:
 - auto git add, commit and push
 - great for using the checker.
+usage:
 ```
-gitu
+$ gitu
 //will commit with message "commit"
-gitu "test message"
+$ gitu "test message"
 //will commit with message "test message"
 ```
 
