@@ -1,0 +1,17 @@
+syntax on
+set autoindent
+set smartindent
+set showcmd
+autocmd BufNewFile *.js 0r /home/seba/holbietools/templates/file.js
+autocmd BufNewFile *.py 0r /home/seba/holbietools/templates/file.py
+autocmd BufNewFile *.html 0r /home/seba/holbietools/templates/file.html
+autocmd BufNewFile *.rb 0r /home/seba/holbietools/templates/file.rb
+autocmd BufNewFile *.sh 0r /home/seba/holbietools/templates/file.sh
+autocmd BufNewFile *.sql 0r /home/seba/holbietools/templates/file.sql
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+autocmd Filetype html setlocal expandtab
+autocmd Filetype ruby setlocal expandtab
+autocmd Filetype javascript setlocal ts=2 sw=2 sts=2 expandtab
+autocmd Filetype python setlocal expandtab
