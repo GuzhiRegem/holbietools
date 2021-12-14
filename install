@@ -1,11 +1,11 @@
 #!/bin/bash
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
-bash ./make_vim
-cat ./.vimoptions | while read l; do
+bash $SCRIPT_DIR/make_vim
+cat $SCRIPT_DIR/.vimoptions | while read l; do
     grep -sqxF "$l" ~/.vimrc || echo "$l" >> ~/.vimrc
 done
-cat programs/alias | while read l; do
+cat $SCRIPT_DIR/programs/alias | while read l; do
     ALI=${l%:*}
     P_NAME=${l#*:}
     COMM="alias $ALI=$SCRIPT_DIR/programs/$P_NAME"
