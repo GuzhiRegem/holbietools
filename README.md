@@ -2,12 +2,12 @@
 
 ## Instructions:
 
-easy instalation with one command:
+Easy instalation with one command:
 ```
 source <(curl https://raw.githubusercontent.com/GuzhiRegem/holbietools/main/one_command)
 ```
 
-manual instalation:
+Manual instalation:
 ```
 cd
 ```
@@ -23,9 +23,9 @@ cd holbietools
 
 ## Features:
 ### gitu:
-- auto git add, commit and push
-- great for using the checker.
-usage:
+- Auto git add, commit and push
+- Great for using the checker.
+- Usage:
 ```
 $ gitu
 //will commit with message "commit"
@@ -34,5 +34,5 @@ $ gitu "test message"
 ```
 
 ### vim configuration
-- file templates.
-- by file extension configuration.
+- File templates.
+- By file-extension configuration.
