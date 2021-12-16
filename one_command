@@ -1,2 +1,3 @@
+mkdir ~/holbietools
 git clone https://github.com/GuzhiRegem/holbietools.git ~/holbietools
 ~/holbietools/install
