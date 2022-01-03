@@ -13,10 +13,11 @@ do
     echo $TMP_COMM_NEWFILE >> $FILENAME
 done
 
-echo "set shiftwidth=4" >> $FILENAME
-echo "set softtabstop=4" >> $FILENAME
-echo "set tabstop=4" >> $FILENAME
-echo "autocmd Filetype html setlocal expandtab" >> $FILENAME
-echo "autocmd Filetype ruby setlocal expandtab" >> $FILENAME
-echo "autocmd Filetype javascript setlocal ts=2 sw=2 sts=2 expandtab" >> $FILENAME
-echo "autocmd Filetype python setlocal expandtab" >> $FILENAME
+echo "set shiftwidth=2" >> $FILENAME
+echo "set softtabstop=2" >> $FILENAME
+echo "set tabstop=2" >> $FILENAME
+echo "set expandtab" >> $FILENAME
+echo "autocmd Filetype html setlocal ts=4 sw=4 sts=4" >> $FILENAME
+echo "autocmd Filetype ruby setlocal ts=4 sw=4 sts=4" >> $FILENAME
+echo "autocmd Filetype python setlocal ts=4 sw=4 sts=4" >> $FILENAME
+echo "autocmd Filetype c setlocal ts=4 sw=4 sts=4 noexpandtab" >> $FILENAME

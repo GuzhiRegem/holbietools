@@ -11,8 +11,8 @@ autocmd BufNewFile *.sql 0r /root/holbietools/templates/file.sql
 set shiftwidth=2
 set softtabstop=2
 set tabstop=2
-autocmd Filetype html setlocal ts=4 sw=4 sts=4 expandtab
-autocmd Filetype ruby setlocal ts=4 sw=4 sts=4 expandtab
-autocmd Filetype javascript setlocal expandtab
-autocmd Filetype python setlocal ts=4 sw=4 sts=4 expandtab
-autocmd Filetype c setlocal ts=4 sw=4 sts=4
+set expandtab
+autocmd Filetype html setlocal ts=4 sw=4 sts=4
+autocmd Filetype ruby setlocal ts=4 sw=4 sts=4
+autocmd Filetype python setlocal ts=4 sw=4 sts=4
+autocmd Filetype c setlocal ts=4 sw=4 sts=4 noexpandtab
