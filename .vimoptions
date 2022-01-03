@@ -8,10 +8,11 @@ autocmd BufNewFile *.html 0r /root/holbietools/templates/file.html
 autocmd BufNewFile *.rb 0r /root/holbietools/templates/file.rb
 autocmd BufNewFile *.sh 0r /root/holbietools/templates/file.sh
 autocmd BufNewFile *.sql 0r /root/holbietools/templates/file.sql
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
-autocmd Filetype html setlocal expandtab
-autocmd Filetype ruby setlocal expandtab
-autocmd Filetype javascript setlocal ts=2 sw=2 sts=2 expandtab
-autocmd Filetype python setlocal expandtab
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
+autocmd Filetype html setlocal ts=4 sw=4 sts=4 expandtab
+autocmd Filetype ruby setlocal ts=4 sw=4 sts=4 expandtab
+autocmd Filetype javascript setlocal expandtab
+autocmd Filetype python setlocal ts=4 sw=4 sts=4 expandtab
+autocmd Filetype c setlocal ts=4 sw=4 sts=4
