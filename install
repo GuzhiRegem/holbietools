@@ -11,6 +11,13 @@ cat $SCRIPT_DIR/programs/alias | while read l; do
     COMM="alias $ALI=$SCRIPT_DIR/programs/$P_NAME"
     grep -sqxF "$COMM" ~/.bash_aliases || echo "$COMM" >> ~/.bash_aliases
 done
+echo GitHub email:
+read g_email
+echo GitHub username:
+read g_name
+git config --global credential.helper store
+git config --global user.email "$g_email"
+git config --global user.name "$g_name"
 
 echo ""
 echo -e "\e[1;32m---Done---"
