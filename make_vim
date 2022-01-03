@@ -7,7 +7,7 @@ echo "set autoindent" >> $FILENAME
 echo "set smartindent" >> $FILENAME
 echo "set showcmd" >> $FILENAME
 
-for ext in js py html rb sh sql
+for ext in js py html rb sh sql pp
 do
     TMP_COMM_NEWFILE="autocmd BufNewFile *.$ext 0r $SCRIPT_DIR/templates/file.$ext"
     echo $TMP_COMM_NEWFILE >> $FILENAME

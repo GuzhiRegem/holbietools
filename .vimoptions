@@ -8,6 +8,7 @@ autocmd BufNewFile *.html 0r /root/holbietools/templates/file.html
 autocmd BufNewFile *.rb 0r /root/holbietools/templates/file.rb
 autocmd BufNewFile *.sh 0r /root/holbietools/templates/file.sh
 autocmd BufNewFile *.sql 0r /root/holbietools/templates/file.sql
+autocmd BufNewFile *.pp 0r /root/holbietools/templates/file.pp
 set shiftwidth=2
 set softtabstop=2
 set tabstop=2
